@@ -35,12 +35,12 @@ This project is an implementation of an automatic message sending system built w
 4. Open the `.env` file and fill in the required environment variables with your specific values.
 5. Run the `setup.sh` script to create the required Docker network, start the MySQL container, and run Docker Compose: `./setup/setup.sh`
 This script will create a Docker network named "insider-network", start the MySQL container, import the initial database setup, and then start the Docker Compose services.
-6. Access the application at `http://localhost:8081` (or the port specified in the `SERVER_PORT` environment variable).
+6. Access the application at `http://localhost:3000` (or the port specified in the `SERVER_PORT` environment variable).
 
 7. You can follow the messages sent by the application at [`https://webhook.site/2baa69ce-0241-4a7b-8fc9-4845a3206e9c`](`https://webhook.site/2baa69ce-0241-4a7b-8fc9-4845a3206e9c`).
 ### API Documentation
 
-The API documentation is available at `http://localhost:8081/swagger/index.html` (or the appropriate URL based on your `SERVER_PORT` setting). You can explore and test the available endpoints using the Swagger UI.
+The API documentation is available at `http://localhost:3000/swagger/index.html` (or the appropriate URL based on your `SERVER_PORT` setting). You can explore and test the available endpoints using the Swagger UI.
 
 ### Development
 
@@ -51,4 +51,4 @@ If you want to run the application locally without Docker, follow these steps:
 3. Run the database migrations: go run migrations/migration.go
 4. Start the Go application: go run cmd/main.go
 
-The application will be accessible at `http://localhost:8081` (or the specified `SERVER_PORT`).
+The application will be accessible at `http://localhost:3000` (or the specified `SERVER_PORT`).
